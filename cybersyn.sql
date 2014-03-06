@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `formulario` (
   `nombres` varchar(50) NOT NULL,
   `apellidos` varchar(50) NOT NULL,
   `nombre_organizacion` varchar(50) NOT NULL,
-  `descripcion` int(200) NOT NULL,
+  `descripcion` varchar(200) NOT NULL,
   `notificar` char(1) NOT NULL,
   `fecha` date NOT NULL,
   PRIMARY KEY (`indice`),
@@ -47,8 +47,8 @@ CREATE TABLE IF NOT EXISTS `formulario` (
 --
 
 INSERT INTO `formulario` (`indice`, `mail`, `nombres`, `apellidos`, `nombre_organizacion`, `descripcion`, `notificar`, `fecha`) VALUES
-(1, 'nato.ehv@gmail.com', 'renato', 'hormazabal', 'sin organizacion', 0, '', '2014-03-05'),
-(2, 'sad@gmail.com', 'dsf', 'sdfsfd', '', 0, '', '2014-03-05');
+(1, 'nato.ehv@gmail.com', 'renato', 'hormazabal', 'sin organizacion', '0', '', '2014-03-05'),
+(2, 'sad@gmail.com', 'dsf', 'sdfsfd', '', '0', '', '2014-03-05');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
